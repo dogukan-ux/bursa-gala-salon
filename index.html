@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gala Salon | Bursa</title>
+
+<meta name="description"
+content="Gala Salon Bursa için hazırlanmış premium güzellik salonu web sitesi tasarım önizlemesi.">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f5f1eb;
+  color:#161513;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img{
+  width:100%;
+  display:block;
+  object-fit:cover;
+}
+
+.container{
+  width:min(1180px,90%);
+  margin:auto;
+}
+
+/* TOP BAR */
+
+.topbar{
+  background:#161513;
+  color:#d9d0c3;
+  font-size:9px;
+  letter-spacing:3px;
+}
+
+.topbar-inner{
+  min-height:34px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+/* HEADER */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:rgba(245,241,235,.94);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid #d9d1c6;
+}
+
+nav{
+  min-height:80px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:31px;
+  letter-spacing:-1px;
+}
+
+.logo span{
+  display:block;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:7px;
+  letter-spacing:5px;
+  margin-top:-5px;
+  color:#82796f;
+}
+
+.menu{
+  display:flex;
+  align-items:center;
+  gap:30px;
+  font-size:9px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.menu a{
+  transition:.25s;
+}
+
+.menu a:hover{
+  opacity:.55;
+}
+
+/* BUTTON */
+
+.btn{
+  min-height:49px;
+  padding:0 28px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:#171614;
+  color:#fff;
+  border:1px solid #171614;
+  font-size:9px;
+  font-weight:bold;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  transition:.25s;
+}
+
+.btn:hover{
+  background:#9d8564;
+  border-color:#9d8564;
+  transform:translateY(-2px);
+}
+
+.btn-light{
+  background:#f4efe8;
+  border-color:#f4efe8;
+  color:#171614;
+}
+
+/* HERO */
+
+.hero{
+  min-height:88vh;
+  display:flex;
+  align-items:flex-end;
+  position:relative;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(15,13,11,.82),
+      rgba(15,13,11,.38) 55%,
+      rgba(15,13,11,.08)
+    ),
+    url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1900&q=88")
+    center/cover no-repeat;
+}
+
+.hero-content{
+  padding:130px 0 90px;
+  color:#fff;
+  max-width:800px;
+}
+
+.eyebrow{
+  font-size:9px;
+  letter-spacing:5px;
+  text-transform:uppercase;
+  color:#d4c6b4;
+  margin-bottom:22px;
+}
+
+.hero h1{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(65px,10vw,132px);
+  line-height:.78;
+  font-weight:normal;
+  letter-spacing:-7px;
+}
+
+.hero h1 em{
+  font-weight:normal;
+  color:#d7c4a8;
+}
+
+.hero p{
+  max-width:570px;
+  margin:32px 0;
+  color:#e2ddd6;
+  font-size:13px;
+}
+
+.hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.preview-note{
+  margin-top:24px !important;
+  font-size:9px !important;
+  color:#aaa097 !important;
+  max-width:650px !important;
+}
+
+/* INTRO */
+
+.intro{
+  padding:100px 0;
+}
+
+.intro-grid{
+  display:grid;
+  grid-template-columns:.7fr 1.3fr;
+  gap:80px;
+}
+
+.section-label{
+  font-size:9px;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  color:#8a7b68;
+}
+
+.intro h2{
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:normal;
+  font-size:clamp(45px,6vw,75px);
+  line-height:.98;
+  letter-spacing:-3px;
+}
+
+.intro-copy p{
+  color:#6d665f;
+  max-width:620px;
+  margin-top:25px;
+  font-size:13px;
+}
+
+/* STATS */
+
+.stats{
+  border-top:1px solid #d5cdc2;
+  border-bottom:1px solid #d5cdc2;
+}
+
+.stats-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+}
+
+.stat{
+  padding:35px 25px;
+  border-right:1px solid #d5cdc2;
+}
+
+.stat:last-child{
+  border-right:0;
+}
+
+.stat strong{
+  display:block;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:26px;
+  font-weight:normal;
+}
+
+.stat span{
+  display:block;
+  color:#8b8176;
+  font-size:8px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  margin-top:4px;
+}
+
+/* SECTIONS */
+
+section{
+  padding:105px 0;
+}
+
+.heading{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:60px;
+  margin-bottom:55px;
+}
+
+.heading h2{
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:normal;
+  font-size:clamp(48px,6vw,76px);
+  line-height:.92;
+  letter-spacing:-4px;
+  margin-top:12px;
+}
+
+.heading p{
+  max-width:430px;
+  color:#777068;
+  font-size:13px;
+}
+
+/* SERVICES */
+
+.services{
+  background:#191714;
+  color:#fff;
+}
+
+.services .heading p{
+  color:#aaa198;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+
+.service{
+  min-height:390px;
+  padding:35px;
+  border:1px solid #38332e;
+  position:relative;
+  transition:.3s;
+}
+
+.service:hover{
+  background:#211e1a;
+  transform:translateY(-5px);
+}
+
+.service-number{
+  color:#857764;
+  font-size:9px;
+  letter-spacing:3px;
+}
+
+.service-symbol{
+  font-family:Georgia,serif;
+  font-size:55px;
+  color:#bda788;
+  margin:70px 0 45px;
+}
+
+.service h3{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:27px;
+  font-weight:normal;
+  margin-bottom:13px;
+}
+
+.service p{
+  color:#a7a09a;
+  font-size:12px;
+}
+
+/* FEATURE */
+
+.feature{
+  padding:0;
+}
+
+.feature-grid{
+  min-height:700px;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+}
+
+.feature-image{
+  background:
+    url("https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=1400&q=88")
+    center/cover no-repeat;
+}
+
+.feature-content{
+  background:#c9b397;
+  padding:70px;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+}
+
+.feature-content .section-label{
+  color:#635440;
+}
+
+.feature-content h2{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(50px,6vw,77px);
+  font-weight:normal;
+  line-height:.9;
+  letter-spacing:-4px;
+  margin:20px 0 28px;
+}
+
+.feature-content p{
+  max-width:500px;
+  color:#50483e;
+  font-size:13px;
+  margin-bottom:18px;
+}
+
+/* PROCESS */
+
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  border-top:1px solid #d5cdc2;
+  border-bottom:1px solid #d5cdc2;
+}
+
+.process-item{
+  padding:30px;
+  min-height:290px;
+  border-right:1px solid #d5cdc2;
+}
+
+.process-item:last-child{
+  border-right:0;
+}
+
+.process-item span{
+  color:#9b8c78;
+  font-size:9px;
+  letter-spacing:2px;
+}
+
+.process-item h3{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:24px;
+  font-weight:normal;
+  margin:100px 0 10px;
+}
+
+.process-item p{
+  color:#777068;
+  font-size:12px;
+}
+
+/* GALLERY */
+
+.gallery-section{
+  background:#eee8e0;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:1.3fr 1fr 1fr;
+  grid-template-rows:300px 300px;
+  gap:8px;
+}
+
+.gallery img{
+  height:100%;
+  filter:saturate(.75);
+  transition:.35s;
+}
+
+.gallery img:hover{
+  filter:saturate(1);
+}
+
+.gallery .large{
+  grid-row:1/3;
+}
+
+.gallery-note{
+  margin-top:15px;
+  color:#847b71;
+  font-size:9px;
+  max-width:800px;
+}
+
+/* CONTACT */
+
+.contact{
+  background:#171614;
+  color:#fff;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:90px;
+}
+
+.contact h2{
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:normal;
+  font-size:clamp(55px,7vw,90px);
+  line-height:.85;
+  letter-spacing:-5px;
+  margin:20px 0 28px;
+}
+
+.contact-copy>p{
+  max-width:520px;
+  color:#aaa29a;
+  font-size:13px;
+  margin-bottom:30px;
+}
+
+.info{
+  border-bottom:1px solid #37332f;
+  padding:17px 0;
+}
+
+.info small{
+  display:block;
+  color:#82796f;
+  font-size:8px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+.info strong{
+  display:block;
+  margin-top:4px;
+  font-size:14px;
+}
+
+.contact-card{
+  background:#24211d;
+  border:1px solid #3a3530;
+  padding:48px;
+}
+
+.contact-card small{
+  color:#9e8d78;
+  font-size:9px;
+  letter-spacing:3px;
+}
+
+.contact-card h3{
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:normal;
+  font-size:38px;
+  line-height:1.05;
+  margin:18px 0;
+}
+
+.contact-card p{
+  color:#a69e96;
+  font-size:12px;
+  margin-bottom:28px;
+}
+
+.contact-card .btn{
+  width:100%;
+  margin-top:8px;
+}
+
+/* FAQ */
+
+.faq{
+  max-width:850px;
+}
+
+details{
+  padding:23px 0;
+  border-bottom:1px solid #d1c8bd;
+}
+
+summary{
+  cursor:pointer;
+  font-size:12px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+
+details p{
+  color:#746d65;
+  font-size:12px;
+  margin-top:14px;
+}
+
+/* FOOTER */
+
+footer{
+  background:#0d0c0b;
+  color:#776f67;
+  padding:37px 0;
+  font-size:9px;
+  border-top:1px solid #2a2724;
+}
+
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+  .menu{
+    display:none;
+  }
+
+  .intro-grid,
+  .feature-grid,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .feature-image{
+    min-height:550px;
+  }
+
+  .service-grid{
+    grid-template-columns:1fr;
+  }
+
+  .stats-grid,
+  .process-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .heading{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .gallery{
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:360px 250px 250px;
+  }
+
+  .gallery .large{
+    grid-column:1/3;
+    grid-row:auto;
+  }
+}
+
+@media(max-width:600px){
+
+  section{
+    padding:75px 0;
+  }
+
+  .hero h1{
+    letter-spacing:-4px;
+  }
+
+  .stats-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .stat{
+    border-bottom:1px solid #d5cdc2;
+  }
+
+  .process-grid{
+    grid-template-columns:1fr;
+  }
+
+  .process-item{
+    min-height:auto;
+    border-right:0;
+    border-bottom:1px solid #d5cdc2;
+  }
+
+  .process-item h3{
+    margin:45px 0 10px;
+  }
+
+  .feature-content{
+    padding:55px 30px;
+  }
+
+  .gallery{
+    grid-template-columns:1fr;
+    grid-template-rows:repeat(5,280px);
+  }
+
+  .gallery .large{
+    grid-column:auto;
+  }
+
+  .contact-card{
+    padding:35px 25px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <span>GALA SALON · BURSA</span>
+    <span>BEAUTY · CARE · EXPERIENCE</span>
+  </div>
+</div>
+
+<header>
+<nav class="container">
+
+  <a href="#anasayfa" class="logo">
+    Gala
+    <span>SALON · BURSA</span>
+  </a>
+
+  <div class="menu">
+    <a href="#hizmetler">Deneyim</a>
+    <a href="#galeri">Galeri</a>
+    <a href="#iletisim">İletişim</a>
+    <a href="#iletisim" class="btn">BİLGİ AL</a>
+  </div>
+
+</nav>
+</header>
+
+<main>
+
+<section class="hero" id="anasayfa">
+
+<div class="container hero-content">
+
+  <div class="eyebrow">
+    Beauty Studio · Bursa
+  </div>
+
+  <h1>
+    KENDİNİ<br>
+    <em>YENİDEN</em><br>
+    KEŞFET.
+  </h1>
+
+  <p>
+    Gala Salon için güzellik ve bakım deneyimini modern,
+    zarif ve premium bir dijital dünyayla buluşturan
+    web sitesi tasarım konsepti.
+  </p>
+
+  <div class="hero-buttons">
+
+    <a href="#hizmetler" class="btn btn-light">
+      DENEYİMİ KEŞFET
+    </a>
+
+    <a href="#iletisim" class="btn">
+      İLETİŞİM
+    </a>
+
+  </div>
+
+  <p class="preview-note">
+    Bu çalışma Gala Salon'a sunulmak üzere hazırlanmış bağımsız
+    bir web sitesi tasarım önizlemesidir. İşletmenin resmî
+    web sitesi değildir.
+  </p>
+
+</div>
+</section>
+
+
+<section class="intro">
+
+<div class="container intro-grid">
+
+  <div>
+    <span class="section-label">
+      GALA · BURSA
+    </span>
+  </div>
+
+  <div class="intro-copy">
+
+    <h2>
+      Güzelliğin<br>
+      modern yorumu.
+    </h2>
+
+    <p>
+      Güçlü bir güzellik markası yalnızca sunduğu uygulamalarla
+      değil, müşterinin markayla karşılaştığı ilk andan itibaren
+      oluşturduğu deneyimle de ayrışır.
+    </p>
+
+    <p>
+      Bu konsept Gala Salon'un gerçek hizmetleri, uygulama
+      fotoğrafları ve güncel bilgileriyle özelleştirilebilecek
+      premium bir dijital vitrin olarak tasarlandı.
+    </p>
+
+  </div>
+
+</div>
+</section>
+
+
+<div class="stats">
+
+<div class="container stats-grid">
+
+  <div class="stat">
+    <strong>GALA</strong>
+    <span>Beauty Experience</span>
+  </div>
+
+  <div class="stat">
+    <strong>BURSA</strong>
+    <span>Location</span>
+  </div>
+
+  <div class="stat">
+    <strong>CARE</strong>
+    <span>Beauty & Care</span>
+  </div>
+
+  <div class="stat">
+    <strong>PREMIUM</strong>
+    <span>Digital Experience</span>
+  </div>
+
+</div>
+</div>
+
+
+<section class="services" id="hizmetler">
+
+<div class="container">
+
+  <div class="heading">
+
+    <div>
+      <span class="section-label">
+        GALA EXPERIENCE
+      </span>
+
+      <h2>
+        Size özel<br>
+        bir deneyim.
+      </h2>
+    </div>
+
+    <p>
+      Gala Salon'un kesin hizmet listesi işletme tarafından
+      doğrulandıktan sonra bu alan gerçek uygulamalar ve
+      güncel bilgilerle tamamen özelleştirilebilir.
+    </p>
+
+  </div>
+
+
+  <div class="service-grid">
+
+    <article class="service">
+
+      <div class="service-number">
+        01 / BEAUTY
+      </div>
+
+      <div class="service-symbol">
+        ◇
+      </div>
+
+      <h3>
+        Güzellik
+      </h3>
+
+      <p>
+        İşletmenin güncel güzellik uygulamaları, detayları
+        ve seçenekleri bu bölümde ziyaretçilere güçlü bir
+        görsel yapıyla sunulabilir.
+      </p>
+
+    </article>
+
+
+    <article class="service">
+
+      <div class="service-number">
+        02 / CARE
+      </div>
+
+      <div class="service-symbol">
+        ○
+      </div>
+
+      <h3>
+        Bakım
+      </h3>
+
+      <p>
+        İşletmenin doğruladığı bakım seçenekleri ve
+        uygulama bilgileri müşterilerin kolayca
+        inceleyebileceği şekilde düzenlenebilir.
+      </p>
+
+    </article>
+
+
+    <article class="service">
+
+      <div class="service-number">
+        03 / EXPERIENCE
+      </div>
+
+      <div class="service-symbol">
+        ✦
+      </div>
+
+      <h3>
+        Gala Deneyimi
+      </h3>
+
+      <p>
+        Salon atmosferi, gerçek çalışmalar ve marka
+        yaklaşımı kendi fotoğraflarıyla birlikte
+        sergilenebilir.
+      </p>
+
+    </article>
+
+  </div>
+
+</div>
+</section>
+
+
+<section class="feature">
+
+<div class="feature-grid">
+
+  <div class="feature-image"></div>
+
+  <div class="feature-content">
+
+    <span class="section-label">
+      BEAUTY · DETAIL · CARE
+    </span>
+
+    <h2>
+      Kendiniz için<br>
+      ayırdığınız zaman.
+    </h2>
+
+    <p>
+      Güzellik ve bakım deneyimi, müşterinin kendisine
+      ayırdığı özel zamanın bir parçasıdır.
+    </p>
+
+    <p>
+      Gala Salon için hazırlanan bu dijital konsept;
+      markanın gerçek atmosferini, çalışmalarını ve
+      hizmetlerini modern bir sunumla bir araya getirmek
+      üzere tasarlandı.
+    </p>
+
+    <a href="#iletisim" class="btn">
+      İLETİŞİME GEÇ
+    </a>
+
+  </div>
+
+</div>
+</section>
+
+
+<section>
+
+<div class="container">
+
+  <div class="heading">
+
+    <div>
+
+      <span class="section-label">
+        YOUR GALA MOMENT
+      </span>
+
+      <h2>
+        Sade.<br>
+        Zarif. Gala.
+      </h2>
+
+    </div>
+
+    <p>
+      Kullanıcıyı karmaşık ekranlarla uğraştırmadan
+      ihtiyaç duyduğu bilgiye yönlendiren sade bir
+      dijital müşteri yolculuğu.
+    </p>
+
+  </div>
+
+
+  <div class="process-grid">
+
+    <article class="process-item">
+
+      <span>01</span>
+
+      <h3>Keşfedin</h3>
+
+      <p>
+        Gala Salon'un güncel uygulama ve bakım
+        seçeneklerini inceleyin.
+      </p>
+
+    </article>
+
+
+    <article class="process-item">
+
+      <span>02</span>
+
+      <h3>Seçenekleri öğrenin</h3>
+
+      <p>
+        İhtiyacınıza uygun uygulamalar hakkında
+        işletmeden bilgi alın.
+      </p>
+
+    </article>
+
+
+    <article class="process-item">
+
+      <span>03</span>
+
+      <h3>İletişime geçin</h3>
+
+      <p>
+        Güncel fiyat ve müsaitlik bilgisini
+        doğrudan işletmeden öğrenin.
+      </p>
+
+    </article>
+
+
+    <article class="process-item">
+
+      <span>04</span>
+
+      <h3>Zamanınızı planlayın</h3>
+
+      <p>
+        İşletmeyle görüşerek size uygun zamanı
+        planlayın.
+      </p>
+
+    </article>
+
+  </div>
+
+</div>
+</section>
+
+
+<section class="gallery-section" id="galeri">
+
+<div class="container">
+
+  <div class="heading">
+
+    <div>
+
+      <span class="section-label">
+        GALA VISUAL
+      </span>
+
+      <h2>
+        Markanın<br>
+        dünyası.
+      </h2>
+
+    </div>
+
+    <p>
+      Nihai sürümde bu galeri Gala Salon'un gerçek
+      salon, ekip ve uygulama fotoğraflarıyla
+      tamamen işletmeye özel hâle getirilebilir.
+    </p>
+
+  </div>
+
+
+  <div class="gallery">
+
+    <img
+      class="large"
+      src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1200&q=85"
+      alt="Temsili güzellik salonu görseli">
+
+    <img
+      src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=85"
+      alt="Temsili güzellik salonu görseli">
+
+    <img
+      src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=85"
+      alt="Temsili güzellik görseli">
+
+    <img
+      src="https://images.unsplash.com/photo-1560869713-7d0a29430803?auto=format&fit=crop&w=900&q=85"
+      alt="Temsili bakım görseli">
+
+    <img
+      src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=85"
+      alt="Temsili salon görseli">
+
+  </div>
+
+
+  <p class="gallery-note">
+    Bu tasarım önizlemesinde kullanılan görseller temsilîdir.
+    Gala Salon'a ait oldukları iddia edilmemektedir. İşletmenin
+    onayından sonra gerçek ve onaylanmış fotoğraflarla
+    değiştirilebilir.
+  </p>
+
+</div>
+</section>
+
+
+<section class="contact" id="iletisim">
+
+<div class="container contact-grid">
+
+  <div class="contact-copy">
+
+    <span class="section-label">
+      CONTACT · BURSA
+    </span>
+
+    <h2>
+      Sizin<br>
+      Gala'nız.
+    </h2>
+
+    <p>
+      Güncel hizmetler, fiyatlar ve müsaitlik hakkında
+      bilgi almak için işletmeyle doğrudan iletişime
+      geçebilirsiniz.
+    </p>
+
+    <div class="info">
+      <small>İşletme</small>
+      <strong>Gala Salon</strong>
+    </div>
+
+    <div class="info">
+      <small>Lokasyon</small>
+      <strong>Bursa · Türkiye</strong>
+    </div>
+
+    <div class="info">
+      <small>Alan</small>
+      <strong>Güzellik & Bakım</strong>
+    </div>
+
+  </div>
+
+
+  <div class="contact-card">
+
+    <small>
+      GALA CONTACT
+    </small>
+
+    <h3>
+      Kendinize zaman ayırın.
+    </h3>
+
+    <p>
+      İşletmenin doğrulanmış telefon, WhatsApp,
+      Instagram ve konum bağlantıları nihai
+      sürümde bu alana doğrudan bağlanabilir.
+    </p>
+
+    <a
+      href="https://www.google.com/search?q=Gala+Salon+Bursa"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="btn btn-light">
+      GALA SALON'U ARA
+    </a>
+
+  </div>
+
+</div>
+</section>
+
+
+<section>
+
+<div class="container faq">
+
+  <div class="heading">
+
+    <div>
+
+      <span class="section-label">
+        FAQ
+      </span>
+
+      <h2>
+        Merak<br>
+        edilenler.
+      </h2>
+
+    </div>
+
+  </div>
+
+
+  <details>
+
+    <summary>
+      Gala Salon hangi hizmetleri sunuyor?
+    </summary>
+
+    <p>
+      Kesin ve güncel hizmet listesi işletmeden
+      doğrulanmalıdır. İşletmenin onayladığı hizmetler
+      nihai web sitesinde ayrıntılı şekilde gösterilebilir.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      Güncel fiyatları nasıl öğrenebilirim?
+    </summary>
+
+    <p>
+      Uygulamalara ilişkin güncel fiyat ve paket
+      bilgilerini doğrudan işletmeden öğrenebilirsiniz.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      Nasıl randevu alınır?
+    </summary>
+
+    <p>
+      İşletmenin tercih ettiği randevu kanalı
+      doğrulandıktan sonra nihai web sitesindeki
+      randevu butonu doğrudan o kanala bağlanabilir.
+    </p>
+
+  </details>
+
+
+  <details>
+
+    <summary>
+      Bu Gala Salon'un resmî web sitesi mi?
+    </summary>
+
+    <p>
+      Hayır. Bu çalışma Gala Salon'a sunulmak üzere
+      bağımsız olarak hazırlanmış bir web sitesi
+      tasarım önizlemesidir. İşletmenin onayından
+      sonra gerçek bilgiler ve fotoğraflarla
+      nihai hâle getirilebilir.
+    </p>
+
+  </details>
+
+</div>
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="container footer-inner">
+
+  <span>
+    © 2026 GALA SALON · BURSA
+  </span>
+
+  <span>
+    WEB SİTESİ TASARIM ÖNİZLEMESİ · RESMÎ SİTE DEĞİLDİR
+  </span>
+
+</div>
+
+</footer>
+
+</body>
+</html>
